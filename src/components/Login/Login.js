@@ -89,12 +89,6 @@ const Login = () => {
     }
   };
 
-  function wowee() {
-    console.log("imma test");
-  }
-
-  wowee();
-
   return (
     <Card className={classes.login}>
       <form onSubmit={submitHandler}>
