@@ -38,6 +38,7 @@ function passwordReducer(state, action) {
 
 const Login = () => {
   const ctx = useContext(AuthContext);
+  console.log("test change");
   const emailInputRef = useRef();
   const passwordInputRef = useRef();
   const [formIsValid, setFormIsValid] = useState(false);
@@ -87,6 +88,12 @@ const Login = () => {
       passwordInputRef.current.focus();
     }
   };
+
+  function wowee() {
+    console.log("imma test");
+  }
+
+  wowee();
 
   return (
     <Card className={classes.login}>
